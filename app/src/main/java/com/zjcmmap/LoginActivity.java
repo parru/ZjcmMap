@@ -1,24 +1,22 @@
 package com.zjcmmap;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.Window;
-import android.view.WindowManager;
+import android.view.View;
+
+import com.zjcmmap.view.BaseActivity;
 
 
-public class LoginActivity extends Activity {
+public class LoginActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //全屏
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
         setContentView(R.layout.activity_login);
+        setTitleBar("用户登录");
+
     }
 
 
