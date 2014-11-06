@@ -37,7 +37,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b1fefdd-8e62-4dd0-b0f3-8920e0c1d419" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ZjcmMap.iws" />
     <ignored path=".idea/workspace.xml" />
