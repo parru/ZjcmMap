@@ -25,15 +25,14 @@
         android:orientation="horizontal">
         <TextView
             android:id="@+id/username_txt"
-            android:layout_width="100dp"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="用户名"
             android:textSize="24sp"/>
-        <TextView
+        <EditText
             android:id="@+id/username_edt"
             android:layout_width="match_parent"
-            android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/username_txt"
             android:layout_height="30dp"
             />
@@ -47,15 +46,14 @@
         android:orientation="horizontal">
         <TextView
             android:id="@+id/password_txt"
-            android:layout_width="100dp"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="密    码"
             android:textSize="24sp"/>
-        <TextView
+        <EditText
             android:id="@+id/password_edt"
             android:layout_width="match_parent"
-            android:layout_marginLeft="20dp"
             android:layout_toRightOf="@+id/password_txt"
             android:layout_height="30dp"
             />
@@ -70,7 +68,7 @@
             android:id="@+id/submit_btn"
             android:layout_width="80dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="110dp"
+            android:layout_marginLeft="90dp"
             android:text="提交"/>
         <Button
             android:id="@+id/regist_btn"
