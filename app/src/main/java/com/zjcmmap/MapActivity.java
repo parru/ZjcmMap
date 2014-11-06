@@ -1,29 +1,24 @@
 package com.zjcmmap;
 
-import android.content.Intent;
+import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.zjcmmap.view.BaseActivity;
 
-
-public class MyActivity extends BaseActivity {
+public class MapActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
-
-        gotoActivity(LoginActivity.class);
+        setContentView(R.layout.activity_map);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
+        getMenuInflater().inflate(R.menu.map, menu);
         return true;
     }
 
@@ -37,22 +32,5 @@ public class MyActivity extends BaseActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    /**
-     * 跳转到另一个界面
-     *
-     * @param activityClass 要跳转的activityClass
-     */
-    private void gotoActivity(final Class activityClass) {
-        new Handler().postDelayed(new Runnable() {
-            public void run() {
-                Intent mainIntent = new Intent(MyActivity.this, activityClass);
-                startActivity(mainIntent);
-                finish();
-                overridePendingTransition(android.R.anim.fade_in,
-                        android.R.anim.fade_out);
-            }
-        }, 1500);
     }
 }
