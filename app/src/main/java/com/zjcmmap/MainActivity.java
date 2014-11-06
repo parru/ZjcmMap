@@ -1,29 +1,29 @@
 package com.zjcmmap;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import com.zjcmmap.view.BaseActivity;
 
 
-public class LoginActivity extends BaseActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
-        setContentView(R.layout.activity_login);
-        setTitleBar("用户登录");
-
+        gotoActivity(LoginActivity.class);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.login, menu);
+        getMenuInflater().inflate(R.menu.my, menu);
         return true;
     }
 
@@ -37,5 +37,22 @@ public class LoginActivity extends BaseActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * 跳转到另一个界面
+     *
+     * @param activityClass 要跳转的activityClass
+     */
+    private void gotoActivity(final Class activityClass) {
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                Intent mainIntent = new Intent(MainActivity.this, activityClass);
+                startActivity(mainIntent);
+                finish();
+                overridePendingTransition(android.R.anim.fade_in,
+                        android.R.anim.fade_out);
+            }
+        }, 1500);
     }
 }
