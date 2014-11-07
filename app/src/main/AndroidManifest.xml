@@ -3,6 +3,7 @@
     package="com.zjcmmap" >
 
     <application
+        android:name="com.cucmap.map.MapManager"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -21,9 +22,17 @@
             android:label="@string/title_activity_login" >
         </activity>
         <activity
-            android:name=".MapActivity"
+            android:name="com.cucmap.MapActivity"
             android:label="@string/title_activity_map" >
         </activity>
+        <activity android:name="com.cucmap.BuildingSearchActivity"></activity>
+        <activity android:name="com.cucmap.PathFindingActivity"></activity>
+        <!--<activity android:name="com.cucmap.NavigatorActivity"></activity>-->
+        <activity android:name="com.cucmap.BuildingSearchResultActivity"></activity>
+        <activity android:name="com.cucmap.PathFindingResultActivity"></activity>
+        <!--<activity android:name="com.cucmap.UpdateActivity"></activity>-->
+        <activity android:name="com.cucmap.BuildingDetailActivity"></activity>
+        <!--<activity android:name="com.cucmap.TestMapActivity"></activity>-->
     </application>
 
 </manifest>

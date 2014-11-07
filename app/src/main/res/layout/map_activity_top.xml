@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:layout_gravity="center">
+
+    <com.cucmap.TopLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="top"
+        android:background="#eeeeee">
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="160dp"
+            android:layout_height="36dp" 
+            android:contentDescription="@string/search"
+            android:src="@drawable/search_content"
+            />
+
+        <ImageButton
+            android:id="@+id/pathfinding_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignBottom="@+id/search_button"
+            android:layout_toRightOf="@+id/search_button"
+            android:contentDescription="@string/search"
+            android:src="@drawable/pathfind" 
+            />
+
+        <ImageButton
+            android:id="@+id/navigation_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignBottom="@+id/pathfinding_button"
+            android:layout_toRightOf="@+id/pathfinding_button" 
+            android:contentDescription="@string/search"
+            android:src="@drawable/navigation"
+            />
+
+        <ImageButton
+            android:id="@+id/myplace_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/navigation_button"
+            android:contentDescription="@string/search"
+            android:src="@drawable/myplace" />
+
+    </com.cucmap.TopLayout>
+</LinearLayout>

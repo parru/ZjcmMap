@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/choose_beginposition_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#FCFCFC"
+            android:textSize="12pt" 
+            android:text="选择起点"/>
+        <ListView
+            android:id="@+id/beginposition_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/choose_endposition_text"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#FCFCFC"
+            android:textSize="12pt" 
+            android:text="选择终点"/>
+        <ListView
+            android:id="@+id/endposition_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000" >
+        </ListView>
+    </LinearLayout>
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="53dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/do_search_road"
+            android:layout_width="80dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dip"
+            android:gravity="center"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/cancel_search_road"
+            android:layout_width="80dip"
+            android:layout_height="50dip"
+            android:layout_toRightOf="@+id/do_search_road"
+            android:gravity="center"
+            android:text="取消" />
+    </RelativeLayout>
+
+</LinearLayout>

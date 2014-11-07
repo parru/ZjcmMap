@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/begin_position_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择起点"
+        android:textSize="24sp" />
+    <ListView
+        android:id="@+id/begin_position"
+        android:layout_width="match_parent"
+        android:layout_height="107dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/end_position_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择终点"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/end_position"
+        android:layout_width="match_parent"
+        android:layout_height="151dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/do_search_building"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="选择" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+    </LinearLayout>
+
+</LinearLayout>

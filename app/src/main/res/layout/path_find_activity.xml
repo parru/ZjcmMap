@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <Button android:id="@+id/goto_map_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/map">
+            
+        </Button>
+        <TextView
+            android:id="@+id/path_finding_title"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:text="@string/path_finding"
+            android:textColor="#FF8900"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/startPosition"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/start_position"
+            android:textColor="#1F6FB7"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/start_position"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="@string/choose_begin_position"
+            android:inputType="text"
+            android:minWidth="240dp"
+            android:textColor="#220C39"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/endPosition"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/end_position"
+            android:textColor="#1F6FB7"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/end_position"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="@string/choose_end_position"
+            android:inputType="text"
+            android:minWidth="240dp"
+            android:textColor="#220C39"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/do_path_finding"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/cancel_path_finding"
+            android:layout_width="80dp"
+            android:layout_height="48dp"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+</LinearLayout>
