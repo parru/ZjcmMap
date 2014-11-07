@@ -6,7 +6,7 @@
     android:gravity="top"
     android:layout_gravity="center">
 
-    <com.cucmap.TopLayout
+    <com.map.core.TopLayout
         android:id="@+id/top"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -51,5 +51,5 @@
             android:contentDescription="@string/search"
             android:src="@drawable/myplace" />
 
-    </com.cucmap.TopLayout>
+    </com.map.core.TopLayout>
 </LinearLayout>

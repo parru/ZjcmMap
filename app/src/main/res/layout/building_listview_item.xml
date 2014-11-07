@@ -21,7 +21,7 @@
         android:textColor="#0E0D63"
         />
 
-    <com.cucmap.mark.ScoreImage
+    <com.map.core.view.ScoreImage
         android:id="@+id/building_image_score"
         android:layout_width="match_parent"
         android:layout_height="24dp"
