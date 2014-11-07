@@ -6,5 +6,24 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_map">MapActivity</string>
+    <string name="hello">Hello World, CucMapActivity!</string>
 
+    <string name="temp">temp</string>
+    <string name="search">查询</string>
+    <string name="reset">取消</string>
+    <string name="item">item</string>
+    <string name="search_text">关键字</string>
+
+    <!-- 建筑模块 -->
+    <string name="startfromhere">从这儿出发</string>
+    <string name="gotohere">到这儿去</string>
+    <string name="map">地图</string>
+    <string name="path_finding">道路查询</string>
+
+    <!-- 道路模块 -->
+    <string name="start_position">起点</string>
+    <string name="end_position">终点</string>
+    <string name="my_position">我的位置</string>
+    <string name="choose_begin_position">请输入起点</string>
+    <string name="choose_end_position">请输入终点</string>
 </resources>

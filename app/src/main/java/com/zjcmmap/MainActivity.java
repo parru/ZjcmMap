@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.cucmap.*;
 import com.zjcmmap.view.BaseActivity;
 
 
@@ -16,7 +17,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        gotoActivity(LoginActivity.class);
+        gotoActivity(com.cucmap.MapActivity.class);
     }
 
 

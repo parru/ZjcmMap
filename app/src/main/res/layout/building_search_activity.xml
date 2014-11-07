@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:layout_gravity="top"
+    android:gravity="top" >
+
+    <TableRow
+        android:id="@+id/search_row"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+        
+        <TextView 
+            android:id="@+id/search_text"
+            android:layout_height="48dp"
+            android:layout_width="80dp"
+            android:text="@string/search_text"
+            android:textColor="#CB2C16"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        
+        <EditText
+            android:id="@+id/search_content_text"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:textColor="#78B57A"
+            android:gravity="left"
+            android:inputType="text" 
+            android:text="@string/temp"
+            />
+
+        <ImageButton
+            android:id="@+id/do_search_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/search"
+            android:nextFocusLeft="@+id/search_content"
+            android:src="@drawable/search" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" 
+        android:layout_below="@+id/search_row">
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:focusable="true"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </TableRow>
+    
+    <TableRow 
+        android:id="@+id/result"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_below="@+id/category">
+        <TextView 
+            android:id="@+id/result_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+    </TableRow>
+
+</RelativeLayout>
