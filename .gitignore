@@ -27,7 +27,7 @@ gen/
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode
 
 ## Directory-based project format
-#/.idea/
+/.idea/
 .idea/workspace.xml
 .idea/copyright
 .idea/libraries
