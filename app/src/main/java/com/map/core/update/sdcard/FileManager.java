@@ -1,4 +1,4 @@
-package com.map.core.sdcard;
+package com.map.core.update.sdcard;
 
 import java.io.File;
 import java.io.FileInputStream;

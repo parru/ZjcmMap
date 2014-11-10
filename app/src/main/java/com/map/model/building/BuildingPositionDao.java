@@ -15,7 +15,7 @@ import android.util.Xml;
 import com.map.model.TBManager;
 import com.map.model.position.Position;
 import com.map.model.position.PositionDao;
-import com.map.core.sdcard.FileManager;
+import com.map.core.update.sdcard.FileManager;
 import com.map.core.common.SearchRoadUtil;
 
 public class BuildingPositionDao extends TBManager {
