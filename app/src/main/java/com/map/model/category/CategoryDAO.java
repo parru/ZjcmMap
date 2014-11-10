@@ -15,7 +15,7 @@ import android.util.Log;
 import android.util.Xml;
 
 import com.map.model.TBManager;
-import com.map.core.sdcard.FileManager;
+import com.map.core.update.sdcard.FileManager;
 import com.map.R;
 
 @SuppressLint("UseSparseArrays")

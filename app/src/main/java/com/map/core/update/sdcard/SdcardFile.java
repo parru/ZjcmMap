@@ -1,4 +1,4 @@
-package com.map.core.sdcard;
+package com.map.core.update.sdcard;
 
 public class SdcardFile implements Runnable {
     private String path;

@@ -1,4 +1,4 @@
-package com.map.core.sdcard;
+package com.map.core.update.sdcard;
 
 import android.annotation.SuppressLint;
 import android.graphics.Bitmap;
